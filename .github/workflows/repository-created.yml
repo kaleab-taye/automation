@@ -1,9 +1,13 @@
 name: Repository Created
 
+# on:
+#   repository:
+#     types:
+#       - created
+
 on:
-  repository:
-    types:
-      - created
+  schedule:
+    - cron: '*/5 * * * *'
 
 jobs:
   repository-created:
