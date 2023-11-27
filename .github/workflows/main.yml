@@ -1,0 +1,23 @@
+name: Repository Created Test
+
+# on:
+#   repository:
+#     types:
+#       - created
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+
+jobs:
+  repository-created:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v2
+
+      - name: Print a message
+        run: echo "Repository created!"
+
+      # Add more steps as needed for your specific use case
