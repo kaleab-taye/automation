@@ -19,5 +19,7 @@ jobs:
 
       - name: Print a message
         run: echo "Repository created!"
+        run: echo ls
+        run: echo pwd
 
       # Add more steps as needed for your specific use case
