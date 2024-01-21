@@ -7,7 +7,7 @@ name: Repository Created Test
 
 on:
   schedule:
-    - cron: '*/5 * * * *'
+    # - cron: '* * * * *'
 
 jobs:
   repository-created:
